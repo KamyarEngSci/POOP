@@ -6,7 +6,7 @@ Hello there! Welcome to my GitHub repository where I'll be documenting all my ex
 
 ## About This Project: Examples of POOP
 
-In this initial entry, I'm diving into the world of programming concepts, starting with a lighthearted take on Object-Oriented Programming (OOP). I call it "POOP" – Practical Object-Oriented Examples, of course! 😄
+In this initial entry, I'm diving into the world of programming concepts, starting with a lighthearted take on Object-Oriented Programming (OOP). I call it "POOP" – Pythonic Object-Oriented Examples, of course! 😄
 
 ### What to Expect
 
@@ -38,12 +38,12 @@ Join the polymorphism parade with a lively example involving shapes.
 
 ## Feedback and Contact
 
-I'm eager to learn and improve, so any feedback or suggestions are greatly appreciated. You can reach me by [email](mailto:your@email.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourusername/).
+I'm eager to learn and improve, so any feedback or suggestions are greatly appreciated. You can reach me by [email](othmankamyar@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/kamyar-othman/).
 
 Let's embrace the journey of coding and learning together! 🚀
 
 Happy coding,
-[Your Name]
+Kamyar O. Hamad
 
 ---
 
