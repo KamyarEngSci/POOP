@@ -1,1 +1,83 @@
-class library:
+class Vehicle:
+    """
+    A base class representing a vehicle.
+    """
+    def __init__(self, make, model, year):
+        """
+        Initialize a vehicle with its make, model, and year.
+        """
+        self.make = make
+        self.model = model
+        self.year = year
+    
+    def start_engine(self):
+        """
+        Start the vehicle's engine.
+        """
+        print(f"The {self.make} {self.model}'s engine is now running.")
+
+    def stop_engine(self):
+        """
+        Stop the vehicle's engine.
+        """
+        print(f"The {self.make} {self.model}'s engine has been stopped.")
+
+class Car(Vehicle):
+    """
+    A class representing a car, inheriting from Vehicle.
+    """
+    def __init__(self, make, model, year, num_doors, fuel_type):
+        super().__init__(make, model, year)
+        self.num_doors = num_doors
+        self.fuel_type = fuel_type
+
+    def honk_horn(self):
+        """
+        Make the car's horn honk.
+        """
+        print("Honk! Honk!")
+
+class Bike(Vehicle):
+    """
+    A class representing a bike, inheriting from Vehicle.
+    """
+    def __init__(self, make, model, year, num_gears, frame_type):
+        super().__init__(make, model, year)
+        self.num_gears = num_gears
+        self.frame_type = frame_type
+
+    def ring_bell(self):
+        """
+        Ring the bike's bell.
+        """
+        print("Ring! Ring!")
+
+class Truck(Vehicle):
+    """
+    A class representing a truck, inheriting from Vehicle.
+    """
+    def __init__(self, make, model, year, cargo_capacity, towing_capacity):
+        super().__init__(make, model, year)
+        self.cargo_capacity = cargo_capacity
+        self.towing_capacity = towing_capacity
+
+    def load_cargo(self):
+        """
+        Load cargo into the truck.
+        """
+        print("Loading cargo into the truck.")
+
+# Additional Feature: Create instances of vehicles and demonstrate their behaviors.
+if __name__ == "__main__":
+    car = Car("Toyota", "Camry", 2022, 4, "Gasoline")
+    bike = Bike("Trek", "Mountain Bike", 2021, 21, "Hardtail")
+    truck = Truck("Ford", "F-150", 2023, "2000 lbs", "10000 lbs")
+
+    car.start_engine()
+    car.honk_horn()
+
+    bike.start_engine()
+    bike.ring_bell()
+
+    truck.start_engine()
+    truck.load_cargo()
