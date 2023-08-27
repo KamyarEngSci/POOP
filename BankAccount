@@ -1,0 +1,31 @@
+class BankNoLimitError(Exception):
+    pass
+
+class BankAccount:
+    def __init__(self, account_number, initial_balance):
+        self._validate_account_number(account_number)
+        self._balance = initial_balance
+        self._account_number = account_number
+
+    def _validate_account_number(self, account_number):
+        if len(account_number) != 5:
+            raise BankNoLimitError("Please enter a series of exactly 5 numbers")
+
+    @property
+    def balance(self):
+        return self._balance
+
+    def deposit(self, amount):
+        if amount <= 0:
+            raise ValueError("Invalid amount")
+        self._balance += amount
+
+# Example usage
+try:
+    account1 = BankAccount("12345", 1000)
+    account2 = BankAccount("1234", 1000)  # Raises BankNoLimitError
+    account1.deposit(-500)  # Raises ValueError
+except BankNoLimitError as e:
+    print(e)
+except ValueError as e:
+    print(e)
